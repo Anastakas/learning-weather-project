@@ -2,14 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.weather-app {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  background-color: #2aa3e9;
-}
 h1 {
   color: #ffff;
   line-height: 40px;
@@ -24,12 +16,46 @@ h2 {
   font-weight: 600;
 
   line-height: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 12px;
 }
 p {
   font-size: 14px;
 }
-.temperature {
-  font-size: larger;
+ul {
+  padding: 0;
+  text-align: center;
+}
+li {
+  list-style: none;
+  color: #ffff;
+}
+.hole-app {
+  max-width: 600px;
+  margin: 40px auto;
+}
+.weather-app {
+  padding: 40px 20px 5px 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #2aa3e9;
+}
+.main {
+  color: #ffff;
+  margin-bottom: 20px;
+}
+.main strong {
+  font-size: 54px;
+  margin-left: 20px;
+}
+
+.units {
+  margin-top: 12px;
+}
+.description {
+  font-size: 24px;
+  margin: 32px 0 0 20px;
+}
+.options {
+  font-weight: bold;
 }
