@@ -6,7 +6,7 @@ h1 {
   color: #ffff;
   line-height: 40px;
   margin-top: -5px;
-  margin-left: 10px;
+  margin-left: 12px;
   font-size: 54px;
 }
 h2 {
@@ -17,7 +17,7 @@ h2 {
 
   line-height: 22px;
   margin-bottom: 10px;
-  margin-left: 12px;
+  margin-left: 15px;
 }
 p {
   font-size: 14px;
@@ -30,12 +30,13 @@ li {
   list-style: none;
   color: #ffff;
 }
+
 .hole-app {
   max-width: 600px;
   margin: 40px auto;
 }
 .weather-app {
-  padding: 40px 20px 5px 20px;
+  padding: 40px 20px 5px 15px;
   border: 1px solid gray;
   border-radius: 10px;
   background-color: #2aa3e9;
@@ -45,17 +46,22 @@ li {
   margin-bottom: 20px;
 }
 .main strong {
-  font-size: 54px;
-  margin-left: 20px;
+  font-size: 56px;
+  margin-left: 5px;
+  padding-top: 8px;
 }
 
 .units {
-  margin-top: 12px;
+  margin: 25px 0 0 5px;
 }
 .description {
   font-size: 24px;
-  margin: 32px 0 0 20px;
+  margin: 22px 0 0 20px;
 }
+.description::first-letter {
+  text-transform: capitalize;
+}
+
 .options {
   font-weight: bold;
 }
