@@ -19,7 +19,7 @@
     <div class="container">
       <div class="hole-app">
         <div class="weather-app">
-          <h1>Paris</h1>
+          <h1 id="city"></h1>
           <h2>
             <div>Thuesday</div>
             <div>9:52 AM</div>
@@ -31,28 +31,28 @@
               class="illustr"
             />
 
-            <strong> 12 </strong>
+            <strong id="temperature"></strong>
             <span class="units"> ℃|℉ </span>
-            <span class="description"> Sunny </span>
+            <span class="description" id="description"></span>
           </div>
 
           <div class="row detailes">
             <div class="col-4">
               <ul>
                 <li class="options">Humidity</li>
-                <li>71%</li>
+                <li><span id="humidity"></span>%</li>
               </ul>
             </div>
             <div class="col-4">
               <ul>
-                <li class="options">Participation</li>
-                <li>60%</li>
+                <li class="options">Pressure</li>
+                <li><span id="pressure"></span> mb</li>
               </ul>
             </div>
             <div class="col-4">
               <ul>
                 <li class="options">Wind</li>
-                <li>4 km/h</li>
+                <li><span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
