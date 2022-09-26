@@ -3,7 +3,6 @@ body {
 }
 
 h1 {
-  color: #ffff;
   line-height: 40px;
   margin-top: -5px;
   margin-left: 12px;
@@ -11,8 +10,6 @@ h1 {
   text-transform: capitalize;
 }
 h2 {
-  color: #ffff;
-
   font-size: 18px;
   font-weight: 600;
 
@@ -29,16 +26,19 @@ ul {
 }
 li {
   list-style: none;
-  color: #ffff;
 }
 a {
   text-decoration: none;
 }
 .units .active {
-  color: #ffff;
   cursor: default;
 }
-.units .active:hover {
+h1,
+h2,
+li,
+.main,
+.units .active:hover,
+.units .active {
   color: #ffff;
 }
 .col-4 {
@@ -64,7 +64,6 @@ a {
   background-color: #2aa3e9;
 }
 .main {
-  color: #ffff;
   margin-bottom: 20px;
 }
 .main strong {

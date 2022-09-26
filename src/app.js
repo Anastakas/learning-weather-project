@@ -25,7 +25,6 @@ dayElement.innerHTML = day;
 timeElement.innerHTML = `${hours}:${minutes}`;
 
 function showTemperature(response) {
-  console.log(response.data);
   celsiusTemperature = response.data.main.temp;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
