@@ -30,7 +30,18 @@ li {
   list-style: none;
   color: #ffff;
 }
-
+.col-4 {
+  padding: 0 20px 0 0;
+}
+.btn-primary {
+  background-color: #ffff;
+  border-color: #ced4da;
+  color: #6c757d;
+}
+.btn-primary.w-100:hover {
+  background-color: #2aa3e9;
+  border: 1px solid #ffff;
+}
 .hole-app {
   max-width: 600px;
   margin: 40px auto;
