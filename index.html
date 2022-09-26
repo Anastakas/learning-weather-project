@@ -21,7 +21,7 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-5">
-              <h1 id="city"></h1>
+              <h1 id="city">Kyiv</h1>
             </div>
             <div class="col-7">
               <form id="search-form">
@@ -30,9 +30,9 @@
                     <input
                       type="search"
                       placeholder="Tipe a city"
-                      autocomplete="off"
                       class="form-control"
                       id="city-input"
+                      autocomplete="off"
                     />
                   </div>
                   <div class="col-4">
@@ -54,7 +54,14 @@
             <img src="#" alt="sunny" id="icon" class="illustr" />
 
             <strong id="temperature"></strong>
-            <span class="units"> ℃|℉ </span>
+            <span class="units">
+              <a href="#" class="active" id="celsius-link"> ℃ </a>|<a
+                href="#"
+                id="fahrenheit-link"
+              >
+                ℉
+              </a>
+            </span>
             <span class="description" id="description"></span>
           </div>
 
@@ -80,7 +87,9 @@
           </div>
         </div>
         <small>
-          <a href="https://github.com/Anastakas/learning-weather-project"
+          <a
+            href="https://github.com/Anastakas/learning-weather-project"
+            target="_blank"
             >Open-source code
           </a>
           by Anastasiya Kasilova

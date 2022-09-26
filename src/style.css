@@ -31,6 +31,16 @@ li {
   list-style: none;
   color: #ffff;
 }
+a {
+  text-decoration: none;
+}
+.units .active {
+  color: #ffff;
+  cursor: default;
+}
+.units .active:hover {
+  color: #ffff;
+}
 .col-4 {
   padding: 0 20px 0 0;
 }
