@@ -50,39 +50,55 @@
             <div id="day"></div>
             <div id="time"></div>
           </h2>
-          <div class="main d-flex">
-            <img src="#" alt="sunny" id="icon" class="illustr" />
+          <div class="row">
+            <div class="col-8">
+              <div class="main d-flex">
+                <img src="#" alt="sunny" id="icon" class="illustr" />
 
-            <strong id="temperature"></strong>
-            <span class="units">
-              <a href="#" class="active" id="celsius-link"> ℃ </a>|<a
-                href="#"
-                id="fahrenheit-link"
-              >
-                ℉
-              </a>
-            </span>
-            <span class="description" id="description"></span>
+                <strong id="temperature"></strong>
+                <span class="units">
+                  <a href="#" class="active" id="celsius-link"> ℃ </a>|<a
+                    href="#"
+                    id="fahrenheit-link"
+                  >
+                    ℉
+                  </a>
+                </span>
+                <span class="description" id="description"></span>
+              </div>
+            </div>
+            <div class="col-4">
+              <ul class="list-options">
+                <li class="options">
+                  Humidity: <span class="options-value" id="humidity"> </span> %
+                </li>
+
+                <li class="options">
+                  Pressure:
+                  <span class="options-value" id="pressure"> </span> mb
+                </li>
+
+                <li class="options">
+                  Wind: <span class="options-value" id="wind"> </span> km/h
+                </li>
+              </ul>
+            </div>
           </div>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="forecast-day">Thu</div>
 
-          <div class="row detailes">
-            <div class="col-4">
-              <ul>
-                <li class="options">Humidity</li>
-                <li><span id="humidity"></span>%</li>
-              </ul>
-            </div>
-            <div class="col-4">
-              <ul>
-                <li class="options">Pressure</li>
-                <li><span id="pressure"></span> mb</li>
-              </ul>
-            </div>
-            <div class="col-4">
-              <ul>
-                <li class="options">Wind</li>
-                <li><span id="wind"></span> km/h</li>
-              </ul>
+                <img
+                  src="http://openweathermap.org/img/wn/04d@2x.png"
+                  alt=""
+                  width="30"
+                />
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">15°</span>
+                  <span class="forecast-temperature-min"> 9°</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

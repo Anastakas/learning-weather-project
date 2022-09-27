@@ -14,7 +14,7 @@ h2 {
   font-weight: 600;
 
   line-height: 22px;
-  margin-bottom: 10px;
+
   margin-left: 15px;
 }
 p {
@@ -38,12 +38,22 @@ h2,
 li,
 .main,
 .units .active:hover,
-.units .active {
+.units .active,
+.forecast-temperature,
+.forecast-day {
   color: #ffff;
 }
-.col-4 {
-  padding: 0 20px 0 0;
+.list-options {
+  text-align: left;
+  margin-top: 20px;
 }
+.options {
+  font-weight: bold;
+}
+.options-value {
+  font-weight: normal;
+}
+
 .btn-primary {
   background-color: #ffff;
   border-color: #ced4da;
@@ -63,26 +73,33 @@ li,
   border-radius: 10px;
   background-color: #2aa3e9;
 }
-.main {
-  margin-bottom: 20px;
-}
+
 .main strong {
   font-size: 56px;
-  margin-left: 5px;
+
   padding-top: 8px;
 }
 
 .units {
-  margin: 25px 0 0 5px;
+  margin: 22px 0 0 5px;
 }
 .description {
-  font-size: 24px;
-  margin: 22px 0 0 20px;
+  font-size: 20px;
+  margin: 19px 0 0 5px;
 }
 .description::first-letter {
   text-transform: capitalize;
 }
-
-.options {
+.weather-forecast {
+  margin: 30px 0 15px 0;
+  text-align: center;
+}
+.forecast-day {
+  font-size: 20px;
   font-weight: bold;
 }
+.forecast-temperature-min {
+  opacity: 0.6;
+}
+
+
