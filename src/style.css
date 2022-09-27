@@ -79,13 +79,15 @@ li,
 
   padding-top: 8px;
 }
-
+.illustr {
+  margin-left: -10px;
+}
 .units {
   margin: 22px 0 0 5px;
 }
 .description {
   font-size: 20px;
-  margin: 19px 0 0 5px;
+  margin: 19px 0 0 20px;
 }
 .description::first-letter {
   text-transform: capitalize;
@@ -101,5 +103,3 @@ li,
 .forecast-temperature-min {
   opacity: 0.6;
 }
-
-
