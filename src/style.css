@@ -47,11 +47,10 @@ li,
   text-align: left;
   margin-top: 20px;
 }
-.options {
-  font-weight: bold;
-}
+
 .options-value {
   font-weight: normal;
+  padding-left: 5px;
 }
 
 .btn-primary {
