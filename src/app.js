@@ -37,9 +37,7 @@ function showForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if ((index > 0) & (index <= 6)) {
-      forecastCelsiusMax = Math.round(forecastDay.temp.max);
-      forecastCelsiusMin = Math.round(forecastDay.temp.min);
+    if (index > 0 && index <= 6) {
       forecastHTML =
         forecastHTML +
         ` 
@@ -54,8 +52,12 @@ function showForecast(response) {
                   width="30"
                 />
                 <div class="forecast-temperature">
-                  <span class="forecast-temperature-max" id="forecastTemperatureMax">${forecastCelsiusMax}°</span>
-                  <span class="forecast-temperature-min" id="forecastTemperatureMin"> ${forecastCelsiusMin}°</span>
+                  <span class="forecast-temperature-max" id="forecastTemperatureMax">${Math.round(
+                    forecastDay.temp.max
+                  )}°</span>
+                  <span class="forecast-temperature-min" id="forecastTemperatureMin"> ${Math.round(
+                    forecastDay.temp.min
+                  )}°</span>
                 </div>
               </div>`;
     }
@@ -98,6 +100,7 @@ function search(city) {
   let units = "metric";
 
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+
   axios.get(apiUrl).then(showTemperature);
 }
 function handleInput(event) {
@@ -112,18 +115,8 @@ function showFahrenheitTemperature(event) {
   fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let forecastTemperatureMaxElement = document.querySelector(
-    "#forecastTemperatureMax"
-  );
-  let forecastFahrenheitMax = (forecastCelsiusMax * 9) / 5 + 32;
-  let forecastTemperatureMinElement = document.querySelector(
-    "#forecastTemperatureMin"
-  );
-  let forecastFahrenheitMin = (forecastCelsiusMin * 9) / 5 + 32;
 
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  forecastTemperatureMaxElement.innerHTML = Math.round(forecastFahrenheitMax);
-  forecastTemperatureMinElement.innerHTML = Math.round(forecastFahrenheitMin);
 }
 
 function showCelsiusTemperature(event) {
@@ -132,14 +125,6 @@ function showCelsiusTemperature(event) {
   fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  let forecastTemperatureMaxElement = document.querySelector(
-    "#forecastTemperatureMax"
-  );
-  forecastTemperatureMaxElement.innerHTML = forecastCelsiusMax;
-  let forecastTemperatureMinElement = document.querySelector(
-    "#forecastTemperatureMin"
-  );
-  forecastTemperatureMinElement.innerHTML = forecastCelsiusMin;
 }
 
 let form = document.querySelector("#search-form");
@@ -152,6 +137,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 let celsiusTemperature = null;
-let forecastCelsiusMax = null;
-let forecastCelsiusMin = null;
+
 search("Kyiv");
